@@ -16,6 +16,55 @@ $base-background-color: $very-light-gray;
 
 body {
   font-family: $base-font-family;
-  background-color: $base-background-color;
+
   color: $base-font-color;
+    background-image: url('../../downtown.jpg');
+    repeat: no-repeat;
+    background-position: center center;
+  background-attachment: fixed;
+      background-size: cover;
+      
+
+
+
+}
+body::after{
+content: " ";
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background-size: cover;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: -webkit-linear-gradient(left, rgba(5, 46, 68, .75), rgba(248, 27, 8, .5)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(5, 46, 68, .75), rgba(248, 27, 8, .5)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(5, 46, 68, .75), rgba(248, 27, 8, .5)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(5, 46, 68, .75), rgba(248, 27, 8, .5)); /* Standard syntax (must be last) */
+
+}
+
+
+
+header {
+
+  width: auto;
+  height: 500px;
+
+img {
+@include span-columns(12);
+margin-top: 50px;
+  height: 500px;
+}
+
+}
+
+.companyInfo {
+@include span-columns(12);
+@include shift(1);
+font-family: 'Pacifico', cursive;
+font-size: 30px;
+color: white;
 }
