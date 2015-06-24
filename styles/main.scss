@@ -82,8 +82,8 @@ font-family: 'Pacifico', cursive;
 }
 
 #interest {
-  @include span-columns(5);
-  @include shift(3.5);
+  @include span-columns(6);
+  @include shift(3);
   background-color: rgba(5, 46, 68, .75);
 border-bottom: 5px solid rgba(5, 46, 68, 1);
 text-shadow: 0px -2px rgba(5, 46, 68, 1);
@@ -96,6 +96,7 @@ height: auto;
 font-family: 'Lato', sans-serif;
 letter-spacing: 2px;
 font-weight: bold;
+
 }
 
 #interest:active {
@@ -105,9 +106,7 @@ font-weight: bold;
 }
 
 
-.form {
 
-}
 #form {
 
   @include shift(4);
@@ -158,4 +157,6 @@ font-weight: bold;
   margin-bottom: 15px;
   color: white;
   font-size: 22px;
+  height: auto;
+  overflow: visible;
 }
