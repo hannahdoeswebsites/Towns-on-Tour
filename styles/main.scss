@@ -57,9 +57,9 @@ header {
 
 }
 
-.companyInfo {
+.companySlogan {
 @include span-columns(12);
-
+margin: 0 auto;
 font-family: 'Pacifico', cursive;
  font-size: 30px;
  color: white;
@@ -92,7 +92,7 @@ border-radius: 10px;
 	color: #FFF;
 	text-decoration: none;
     outline: 0;
-height: auto;
+    height: auto;
 font-family: 'Lato', sans-serif;
 letter-spacing: 2px;
 font-weight: bold;
@@ -160,3 +160,17 @@ font-weight: bold;
   height: auto;
   overflow: visible;
 }
+
+.companyInfo{
+@include span-columns(12);
+font-family: 'Lato', sans-serif;
+ color: white;
+ text-align: center;
+ margin: 0 auto;
+
+    h2 {
+      font-size: 28px;
+      text-decoration: underline;
+
+ }
+ }
