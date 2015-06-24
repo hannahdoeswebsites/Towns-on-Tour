@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-
+    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="dist/styles/main.css">
 
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -19,18 +19,29 @@
 
   <header> <img src="/townsontourGreenville.png">
 </header>
-<hr>
 <section class="companyInfo">
 
 <h1> An adventure in food, drink &amp; culture.</h1>
 
-
-</section>
-
-<section class="contactInfo">
 </section>
 
 
+<section class="interest">
+   <button id="interest" value="Show Form"> INTERESTED IN MORE INFO? </button>
+
+
+</section>
+<section class="form">
+<form id="form" action="//formspree.io/townsontour@gmail.com"
+      method="POST">
+      <input id="name" type="text" placeholder="Name"><br>
+    <textarea id="info" name="info" cols="30" rows="10" placeholder="Any questions or other inquiries goes here!"></textarea><br>
+    <input id="email" type="email" name="_replyto" placeholder="Your email">
+    <input  id="submit" type="submit" value="Submit to Towns on Tour">
+    <input type="hidden" name="_next" value="www.townsontour.com" />
+    <input type="hidden" name="_subject" value="Towns on Tour Greenville Submission!" />
+</form>
+</section>
 
 
 
